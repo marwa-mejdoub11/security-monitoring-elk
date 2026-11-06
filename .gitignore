@@ -1,0 +1,17 @@
+# Secrets
+.env
+
+# Dépendances
+node_modules/
+__pycache__/
+*.pyc
+venv/
+
+# Données Docker et logs
+data/
+*.log
+
+# Fichiers système / éditeur
+.DS_Store
+.vscode/
+.idea/
