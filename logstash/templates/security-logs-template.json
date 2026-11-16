@@ -1,0 +1,21 @@
+{
+  "index_patterns": ["security-logs*"],
+  "priority": 100,
+  "template": {
+    "settings": { "number_of_shards": 1, "number_of_replicas": 0 },
+    "mappings": {
+      "properties": {
+        "@timestamp": { "type": "date" },
+        "event_id":   { "type": "keyword" },
+        "event_type": { "type": "keyword" },
+        "username":   { "type": "keyword" },
+        "source_ip":  { "type": "ip" },
+        "status":     { "type": "keyword" },
+        "severity":   { "type": "keyword" },
+        "country":    { "type": "keyword" },
+        "message":    { "type": "text" },
+        "attack_type":{ "type": "keyword" }
+      }
+    }
+  }
+}
