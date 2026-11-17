@@ -27,6 +27,8 @@ services:
     volumes:
       - ./logstash/pipeline:/usr/share/logstash/pipeline
       - ./data/uploads:/usr/share/logstash/uploads
+      - ./logstash/pipelines.yml:/usr/share/logstash/config/pipelines.yml
+      - logstash_data:/usr/share/logstash/data
     depends_on:
       elasticsearch:
         condition: service_healthy
@@ -59,3 +61,4 @@ services:
 volumes:
   es_data:
   mongo_data:
+  logstash_data:
