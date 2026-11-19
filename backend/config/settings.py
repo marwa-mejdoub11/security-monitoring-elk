@@ -126,3 +126,5 @@ MONGO_URI = os.getenv("MONGO_URI", "mongodb://localhost:27017")
 MONGO_DB = os.getenv("MONGO_DB", "security_monitoring")
 UPLOAD_DIR = os.getenv("UPLOAD_DIR", str(BASE_DIR.parent / "data" / "uploads"))
 MAX_UPLOAD_SIZE = 100 * 1024 * 1024  # 100 Mo
+ES_URL = os.getenv("ES_URL", "http://localhost:9200")
+ES_INDEX = "security-logs"
