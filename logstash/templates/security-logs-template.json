@@ -14,7 +14,8 @@
         "severity":   { "type": "keyword" },
         "country":    { "type": "keyword" },
         "message":    { "type": "text" },
-        "attack_type":{ "type": "keyword" }
+        "attack_type":{ "type": "keyword" },
+        "source_file":{ "type": "keyword" }
       }
     }
   }
